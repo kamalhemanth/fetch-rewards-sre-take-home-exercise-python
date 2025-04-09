@@ -15,9 +15,13 @@ def check_health(endpoint):
     headers = endpoint.get('headers')
     body = endpoint.get('body')
 
+    if method is None:
+        method = "GET"
+
     try:
         response = requests.request(method, url, headers=headers, json=body)
-        if 200 <= response.status_code < 300:
+        response_time_ms = response.elapsed.total_seconds() * 1000
+        if 200 <= response.status_code < 300 and response_time_ms <= 500:
             return "UP"
         else:
             return "DOWN"
@@ -31,7 +35,11 @@ def monitor_endpoints(file_path):
 
     while True:
         for endpoint in config:
+            if 'name' and 'url' not in endpoint:
+                print("Error: Each endpoint must have a 'url' and 'name'.")
+                return
             domain = endpoint["url"].split("//")[-1].split("/")[0]
+            domain = domain.split(":")[0]
             result = check_health(endpoint)
 
             domain_stats[domain]["total"] += 1
@@ -53,7 +61,9 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python monitor.py <config_file_path>")
         sys.exit(1)
-
+    if not sys.argv[1].endswith(('.yaml','.yml')):
+        print("Error: The config file must be a yaml.")
+        sys.exit(1)
     config_file = sys.argv[1]
     try:
         monitor_endpoints(config_file)
