@@ -61,3 +61,31 @@ python main.py config/endpoints.yaml
 ### Your output should look like
 
 ![Monitor Output](output/Output.png)
+
+## 🛠️ Code Changes and Improvements
+
+### 1. Availability Calculation
+
+- **Issue:** The initial code did not calculate the availability cumulatively over time.
+- **Solution:** Implemented logic to track the number of "UP" and "DOWN" responses for each domain across multiple check cycles, and calculated the availability as a percentage.
+
+### 2. Response Time Validation
+
+- **Issue:** There was no check for response time, leading to endpoints potentially being marked as "UP" even if they took longer than 500ms to respond.
+- **Solution:** Added a validation step that ensures an endpoint is only considered "UP" if its response time is ≤ 500ms.
+
+### 3. Domain Parsing
+
+- **Issue:** Domain names were not parsed correctly, especially when port numbers were included in the URL.
+- **Solution:** Implemented a function that extracts the domain name from the URL while ignoring port numbers.
+
+### 4. Error Handling for Failed Requests
+
+- **Issue:** The initial code did not properly handle failed HTTP requests.
+- **Solution:** Introduced exception handling to catch request failures and classify those endpoints as "DOWN".
+
+---
+
+### 📋 Conclusion
+
+These changes ensure the tool meets the provided requirements, including cumulative availability reporting, response time validation, and ignoring port numbers when determining domain availability.
