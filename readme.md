@@ -60,4 +60,4 @@ python main.py config/endpoints.yaml
 
 ### Your output should look like
 
-![Monitor Output](sre-take-home-exercise-python/output/Output.png)
+![Monitor Output](output/Output.png)
