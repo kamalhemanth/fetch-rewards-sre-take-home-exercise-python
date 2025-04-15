@@ -1,0 +1,11 @@
+main.py
+
+What’s Changed
+check_health():
+Measures the response time and ensures it's ≤ 500ms.
+Uses timeout=0.5 for requests.
+get_domain():
+Uses urlparse to get the domain, which automatically handles both http/https and ignores ports.
+Cumulative Availability:
+Tracks availability over time without resetting it every cycle.
+
