@@ -1,0 +1,9 @@
+- name: Example Google
+  url: https://www.google.com
+
+- name: Example Post Request
+  url: https://httpbin.org/post
+  method: POST
+  headers:
+    Content-Type: application/json
+  body: '{"test": "hello"}'

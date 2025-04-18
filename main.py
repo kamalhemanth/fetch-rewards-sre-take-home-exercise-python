@@ -2,27 +2,40 @@ import yaml
 import requests
 import time
 from collections import defaultdict
+from urllib.parse import urlparse
+import time as t
 
 # Function to load configuration from the YAML file
 def load_config(file_path):
     with open(file_path, 'r') as file:
         return yaml.safe_load(file)
 
-# Function to perform health checks
 def check_health(endpoint):
     url = endpoint['url']
-    method = endpoint.get('method')
+    method = endpoint.get('method', 'GET')
     headers = endpoint.get('headers')
     body = endpoint.get('body')
 
     try:
-        response = requests.request(method, url, headers=headers, json=body)
-        if 200 <= response.status_code < 300:
+        start = t.time()
+        response = requests.request(method, url, headers=headers, json=body, timeout=5)
+        elapsed_ms = (t.time() - start) * 1000
+
+        print(f"{url} responded in {int(elapsed_ms)}ms with status {response.status_code}")
+
+        if 200 <= response.status_code < 300 and elapsed_ms <= 500:
             return "UP"
         else:
             return "DOWN"
-    except requests.RequestException:
+    except requests.RequestException as e:
+        print(f"Request to {url} failed: {e}")
         return "DOWN"
+
+# Function to extract domain name from URL (ignoring ports)
+def get_domain(url):
+    parsed_url = urlparse(url)
+    domain = parsed_url.hostname
+    return domain
 
 # Main function to monitor endpoints
 def monitor_endpoints(file_path):
@@ -31,7 +44,7 @@ def monitor_endpoints(file_path):
 
     while True:
         for endpoint in config:
-            domain = endpoint["url"].split("//")[-1].split("/")[0]
+            domain = get_domain(endpoint["url"])
             result = check_health(endpoint)
 
             domain_stats[domain]["total"] += 1
