@@ -36,7 +36,8 @@ Once the dependencies are installed, you can run the application:
 ```bash 
 python main.py <config_file_path> 
 
-Example: python main.py config.yaml 
+Example 1: python main.py Sample.yaml 
+Example 2: python main.py customConfig.yaml 
 ```
 
 ## **3\. Issues Identified in Initial Code**
