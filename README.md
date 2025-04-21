@@ -135,7 +135,7 @@ This is a screenshot showing the error state before the fixes were implemented.
 
 Input File: Sample.yaml
 
-![Error Screenshot](image/error_screenshot.png)
+![Error Screenshot](images/error_screenshot.png)
 
 ### Working State
 
