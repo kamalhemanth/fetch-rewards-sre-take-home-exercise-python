@@ -1,0 +1,19 @@
+- name: "Google"
+  url: "https://www.google.com"
+  method: "GET"
+  headers:
+    User-Agent: "SRE Monitor"
+  
+- name: "GitHub"
+  url: "https://github.com"
+  method: "GET"
+  headers:
+    User-Agent: "SRE Monitor"
+  timeout: 0.5  # Custom timeout value for testing
+  
+
+- name: "Stack Overflow"
+  url: "https://stackoverflow.com"
+  method: "GET"
+  headers:
+    User-Agent: "SRE Monitor"
