@@ -1,0 +1,22 @@
+- body: '{"foo":"bar"}'
+  headers:
+    content-type: application/json
+  method: POST
+  name: sample body up
+  url: https://reqres.in/api/users
+
+- name: sample index up
+  url: https://jsonplaceholder.typicode.com/posts/1
+
+- name: Current IP address
+  url: https://ipinfo.io/ip
+
+- body: "{}"
+  headers:
+    content-type: application/json
+  method: POST
+  name: sample body down
+  url: https://mock.codes/503
+
+- name: sample error down
+  url: https://mock.codes/500

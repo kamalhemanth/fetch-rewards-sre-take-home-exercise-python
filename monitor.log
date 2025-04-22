@@ -1,0 +1,92 @@
+2025-04-22 09:41:05,412 - INFO - [https://ipinfo.io/ip] Status: UP (HTTP 200)
+2025-04-22 09:41:05,450 - INFO - [https://jsonplaceholder.typicode.com/posts/1] Status: UP (HTTP 200)
+2025-04-22 09:41:05,507 - INFO - [https://mock.codes/503] Status: DOWN (HTTP 503)
+2025-04-22 09:41:05,513 - INFO - [https://mock.codes/500] Status: DOWN (HTTP 500)
+2025-04-22 09:41:05,587 - INFO - [https://reqres.in/api/users] Status: DOWN (HTTP 400)
+2025-04-22 09:41:05,589 - INFO -   - ipinfo.io                           ➤  100% UP
+2025-04-22 09:41:05,589 - INFO -   - jsonplaceholder.typicode.com        ➤  100% UP
+2025-04-22 09:41:05,589 - INFO -   - mock.codes                          ➤    0% DOWN
+2025-04-22 09:41:05,589 - INFO -   - reqres.in                           ➤    0% DOWN
+2025-04-22 09:41:05,589 - INFO - 
+✅ Monitoring cycle complete.
+------------------------------------------------------------
+
+2025-04-22 09:41:20,396 - INFO - [https://ipinfo.io/ip] Status: UP (HTTP 200)
+2025-04-22 09:41:20,403 - INFO - [https://mock.codes/500] Status: DOWN (HTTP 500)
+2025-04-22 09:41:20,437 - INFO - [https://mock.codes/503] Status: DOWN (HTTP 503)
+2025-04-22 09:41:20,445 - INFO - [https://jsonplaceholder.typicode.com/posts/1] Status: UP (HTTP 200)
+2025-04-22 09:41:20,554 - INFO - [https://reqres.in/api/users] Status: DOWN (HTTP 400)
+2025-04-22 09:41:20,556 - INFO -   - ipinfo.io                           ➤  100% UP
+2025-04-22 09:41:20,556 - INFO -   - jsonplaceholder.typicode.com        ➤  100% UP
+2025-04-22 09:41:20,556 - INFO -   - mock.codes                          ➤    0% DOWN
+2025-04-22 09:41:20,556 - INFO -   - reqres.in                           ➤    0% DOWN
+2025-04-22 09:41:20,556 - INFO - 
+✅ Monitoring cycle complete.
+------------------------------------------------------------
+
+2025-04-22 09:41:35,400 - INFO - [https://ipinfo.io/ip] Status: UP (HTTP 200)
+2025-04-22 09:41:35,424 - INFO - [https://mock.codes/503] Status: DOWN (HTTP 503)
+2025-04-22 09:41:35,428 - INFO - [https://mock.codes/500] Status: DOWN (HTTP 500)
+2025-04-22 09:41:35,433 - INFO - [https://jsonplaceholder.typicode.com/posts/1] Status: UP (HTTP 200)
+2025-04-22 09:41:35,654 - INFO - [https://reqres.in/api/users] Status: DOWN (HTTP 400)
+2025-04-22 09:41:35,654 - INFO -   - ipinfo.io                           ➤  100% UP
+2025-04-22 09:41:35,654 - INFO -   - jsonplaceholder.typicode.com        ➤  100% UP
+2025-04-22 09:41:35,654 - INFO -   - mock.codes                          ➤    0% DOWN
+2025-04-22 09:41:35,654 - INFO -   - reqres.in                           ➤    0% DOWN
+2025-04-22 09:41:35,654 - INFO - 
+✅ Monitoring cycle complete.
+------------------------------------------------------------
+
+2025-04-22 09:41:50,405 - INFO - [https://ipinfo.io/ip] Status: UP (HTTP 200)
+2025-04-22 09:41:50,428 - INFO - [https://jsonplaceholder.typicode.com/posts/1] Status: UP (HTTP 200)
+2025-04-22 09:41:50,447 - INFO - [https://mock.codes/500] Status: DOWN (HTTP 500)
+2025-04-22 09:41:50,449 - INFO - [https://mock.codes/503] Status: DOWN (HTTP 503)
+2025-04-22 09:41:50,645 - INFO - [https://reqres.in/api/users] Status: DOWN (HTTP 400)
+2025-04-22 09:41:50,647 - INFO -   - ipinfo.io                           ➤  100% UP
+2025-04-22 09:41:50,648 - INFO -   - jsonplaceholder.typicode.com        ➤  100% UP
+2025-04-22 09:41:50,648 - INFO -   - mock.codes                          ➤    0% DOWN
+2025-04-22 09:41:50,648 - INFO -   - reqres.in                           ➤    0% DOWN
+2025-04-22 09:41:50,648 - INFO - 
+✅ Monitoring cycle complete.
+------------------------------------------------------------
+
+2025-04-22 09:42:05,420 - INFO - [https://ipinfo.io/ip] Status: UP (HTTP 200)
+2025-04-22 09:42:05,426 - INFO - [https://mock.codes/503] Status: DOWN (HTTP 503)
+2025-04-22 09:42:05,454 - INFO - [https://mock.codes/500] Status: DOWN (HTTP 500)
+2025-04-22 09:42:05,460 - INFO - [https://jsonplaceholder.typicode.com/posts/1] Status: UP (HTTP 200)
+2025-04-22 09:42:05,583 - INFO - [https://reqres.in/api/users] Status: DOWN (HTTP 400)
+2025-04-22 09:42:05,584 - INFO -   - ipinfo.io                           ➤  100% UP
+2025-04-22 09:42:05,584 - INFO -   - jsonplaceholder.typicode.com        ➤  100% UP
+2025-04-22 09:42:05,584 - INFO -   - mock.codes                          ➤    0% DOWN
+2025-04-22 09:42:05,584 - INFO -   - reqres.in                           ➤    0% DOWN
+2025-04-22 09:42:05,584 - INFO - 
+✅ Monitoring cycle complete.
+------------------------------------------------------------
+
+2025-04-22 09:42:20,412 - INFO - [https://mock.codes/500] Status: DOWN (HTTP 500)
+2025-04-22 09:42:20,413 - INFO - [https://mock.codes/503] Status: DOWN (HTTP 503)
+2025-04-22 09:42:20,419 - INFO - [https://ipinfo.io/ip] Status: UP (HTTP 200)
+2025-04-22 09:42:20,449 - INFO - [https://jsonplaceholder.typicode.com/posts/1] Status: UP (HTTP 200)
+2025-04-22 09:42:20,723 - INFO - [https://reqres.in/api/users] Status: DOWN (HTTP 400)
+2025-04-22 09:42:20,724 - INFO -   - ipinfo.io                           ➤  100% UP
+2025-04-22 09:42:20,725 - INFO -   - jsonplaceholder.typicode.com        ➤  100% UP
+2025-04-22 09:42:20,725 - INFO -   - mock.codes                          ➤    0% DOWN
+2025-04-22 09:42:20,725 - INFO -   - reqres.in                           ➤    0% DOWN
+2025-04-22 09:42:20,725 - INFO - 
+✅ Monitoring cycle complete.
+------------------------------------------------------------
+
+2025-04-22 09:42:35,415 - INFO - [https://ipinfo.io/ip] Status: UP (HTTP 200)
+2025-04-22 09:42:35,422 - INFO - [https://mock.codes/503] Status: DOWN (HTTP 503)
+2025-04-22 09:42:35,422 - INFO - [https://mock.codes/500] Status: DOWN (HTTP 500)
+2025-04-22 09:42:35,469 - INFO - [https://jsonplaceholder.typicode.com/posts/1] Status: UP (HTTP 200)
+2025-04-22 09:42:35,712 - INFO - [https://reqres.in/api/users] Status: DOWN (HTTP 400)
+2025-04-22 09:42:35,714 - INFO -   - ipinfo.io                           ➤  100% UP
+2025-04-22 09:42:35,715 - INFO -   - jsonplaceholder.typicode.com        ➤  100% UP
+2025-04-22 09:42:35,715 - INFO -   - mock.codes                          ➤    0% DOWN
+2025-04-22 09:42:35,715 - INFO -   - reqres.in                           ➤    0% DOWN
+2025-04-22 09:42:35,715 - INFO - 
+✅ Monitoring cycle complete.
+------------------------------------------------------------
+
+2025-04-22 09:42:44,429 - INFO - Monitoring stopped by user.
