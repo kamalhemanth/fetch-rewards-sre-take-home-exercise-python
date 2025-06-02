@@ -25,7 +25,7 @@ This tool checks HTTP endpoints periodically and reports cumulative availability
 ### Running the endpoint monitor
 
 ```bash
-python main.py config/endpoints.yaml
+python main.py sample.yaml
 ```
 
 ## 🛠️ Code Changes and Improvements
